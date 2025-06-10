@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan | Fitness Exercise Gallery</title>
+  <style>
+    :root {
+      --primary: #1a73e8;
+      --accent: #fbbc04;
+      --background: #f5f7fa;
+      --text: #222;
+    }
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      margin: 0;
+      padding: 2rem;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .logo {
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    h1 {
+      color: var(--primary);
+      margin: 0;
+    }
+    h2 {
+      color: var(--accent);
+      margin-top: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .color-sample {
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+      border: 1px solid #ccc;
+    }
+    .wireframes {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .wireframe {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 320px;
+      min-height: 400px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .wireframe-title {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .wf-box {
+      background: #e3eafc;
+      border: 1px dashed #1a73e8;
+      border-radius: 4px;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+    .wf-img {
+      background: #fbbc04;
+      border-radius: 4px;
+      height: 120px;
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">FE</div>
+    <h1>Fitness Exercise Gallery</h1>
+  </header>
+
+  <section>
+    <h2>Site Name</h2>
+    <p><strong>Fitness Exercise Gallery</strong></p>
+    <p>
+      This name clearly communicates the site's purpose: a gallery of exercises categorized by muscle group. It's easy to remember, descriptive, and suitable for fitness enthusiasts looking for exercise ideas and instructions.
+    </p>
+    <p>
+      <em>Optional domain availability:</em> fit-exercise-gallery.com
+    </p>
+  </section>
+
+  <section>
+    <h2>Site Purpose</h2>
+    <p>
+      The Fitness Exercise Gallery provides a visual and interactive guide to strength training exercises, organized by muscle group. Each gallery features multiple exercises with step-by-step photos, embedded demonstration videos, and clear instructions, helping users learn proper form and discover new workouts.
+    </p>
+  </section>
+
+  <section>
+    <h2>Scenarios</h2>
+    <ul>
+      <li>Which exercises can I do to target my chest muscles, and how do I perform them correctly?</li>
+      <li>Can I see a demonstration video and step-by-step images for each exercise?</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Color Schema</h2>
+    <ul>
+      <li>
+        <span class="color-sample" style="background: #1a73e8;"></span>
+        <strong>Primary Blue (#1a73e8):</strong> Used for headings, buttons, and accents.
+      </li>
+      <li>
+        <span class="color-sample" style="background: #fbbc04;"></span>
+        <strong>Accent Yellow (#fbbc04):</strong> Used for highlights, icons, and call-to-action elements.
+      </li>
+      <li>
+        <span class="color-sample" style="background: #f5f7fa;"></span>
+        <strong>Background Gray (#f5f7fa):</strong> Used for page background.
+      </li>
+      <li>
+        <span class="color-sample" style="background: #222;"></span>
+        <strong>Text (#222):</strong> Used for main body text.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Typography</h2>
+    <ul>
+      <li>
+        <strong>Roboto</strong> (sans-serif): Used for all headings and body text for a clean, modern look.
+      </li>
+      <li>
+        <strong>Arial</strong> (fallback): Used if Roboto is unavailable.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Wireframe</h2>
+    <div class="wireframes">
+      <img src="../images/wireframe-workout-gallery.png" alt="Wireframe for Fitness Exercise Gallery - mobile and desktop views" style="max-width:100%;border:1px solid #ccc;border-radius:8px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:1rem;">
+    </div>
+    <p style="margin-top:1rem; font-size:0.95rem;">
+      <em>Each exercise contains two images (toggle or swipe), an embedded YouTube video, and a description.</em>
+    </p>
+  </section>
+</body>
+</html>
