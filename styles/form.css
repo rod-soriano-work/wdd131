@@ -1,0 +1,112 @@
+:root {
+  --primary: #1a73e8;
+  --accent: #fbbc04;
+  --bg: #f5f7fa;
+  --text: #222;
+  --radius: 8px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 480px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem;
+}
+
+h1 {
+  color: var(--primary);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+label, legend {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #bbb;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+input[type="submit"]:hover {
+  background: var(--accent);
+  color: var(--text);
+}
+
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 0.2rem;
+}
+.stars input[type="radio"] {
+  display: none;
+}
+.stars label {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.stars input[type="radio"]:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+  color: var(--accent);
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+footer {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+  color: #888;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
