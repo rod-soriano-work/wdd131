@@ -1,0 +1,195 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+    background-color: #555;
+}
+
+/* Welcome page */
+.welcome {
+    text-align: center;
+    padding: 4rem 2rem;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Exercise layout */
+.exercise-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.exercise-row {
+    margin-bottom: 3rem;
+}
+
+.exercise-row h2 {
+    margin-bottom: 1rem;
+}
+
+.exercise-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.images {
+    display: flex;
+    gap: 1rem;
+    flex: 2;
+}
+
+.images img {
+    width: 50%;
+    height: auto;
+}
+
+iframe {
+    flex: 1;
+    height: 315px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+/* Exercise Group Specific Styles */
+.exercise-group {
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.exercise-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 4px solid #555;
+}
+
+.exercise-description {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    padding: 0 1rem;
+}
+
+.exercise-media {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.exercise-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.exercise-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.exercise-video {
+    height: 100%;
+    min-height: 300px;
+}
+
+.exercise-video iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments for exercise groups */
+@media (max-width: 768px) {
+    .exercise-media {
+        grid-template-columns: 1fr;
+    }
+    
+    .exercise-images {
+        grid-template-columns: 1fr;
+    }
+    
+    .exercise-video {
+        min-height: 250px;
+    }
+    
+    .exercise-title {
+        font-size: 1.75rem;
+    }
+    
+    .exercise-description {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .exercise-content {
+        flex-direction: column;
+    }
+
+    .images {
+        flex-direction: column;
+    }
+
+    .images img {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
